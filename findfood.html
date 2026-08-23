@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Available Food – FoodBridge</title>
+  <meta name="description" content="Browse live surplus food listings available for immediate pickup by verified shelters, NGOs, and volunteers.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-hand-holding-heart"></i></div>
+        Food<span>Bridge</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="donate.html" class="nav-link">Donate Food</a>
+        <a href="findfood.html" class="nav-link active">Find Food</a>
+        <a href="volunteer.html" class="nav-link">Volunteers</a>
+        <a href="ngo.html" class="nav-link">NGOs</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="donate.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-plus-circle"></i> Donate Surplus
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section style="padding: 3rem 0 2rem 0; background: linear-gradient(180deg, rgba(232, 245, 233, 0.5) 0%, rgba(255, 253, 248, 1) 100%);">
+    <div class="container text-center">
+      <span class="section-tag"><i class="fas fa-search-location"></i> Real-Time Firestore Feed</span>
+      <h1 class="section-title">Available Food Donations</h1>
+      <p class="section-subtitle">Real-time listings synchronized via Firebase Firestore for instant shelter and volunteer pickups.</p>
+    </div>
+  </section>
+
+  <!-- FILTER & SEARCH BAR -->
+  <section style="padding: 1rem 0 3rem 0;">
+    <div class="container">
+      <div style="background: var(--surface-white); padding: 1.5rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between;">
+        
+        <div style="flex: 2; min-width: 250px; position: relative;">
+          <i class="fas fa-search" style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: var(--text-muted);"></i>
+          <input type="text" id="searchInput" class="form-control" placeholder="Search by food name, landmark, or donor..." style="padding-left: 2.8rem;" />
+        </div>
+
+        <div style="flex: 1; min-width: 160px;">
+          <select id="categoryFilter" class="form-control">
+            <option value="all">All Categories</option>
+            <option value="fresh cooked">Fresh Cooked</option>
+            <option value="bakery">Bakery</option>
+            <option value="packaged">Packaged</option>
+            <option value="raw">Raw Ingredients</option>
+          </select>
+        </div>
+
+        <div style="flex: 1; min-width: 140px;">
+          <select id="dietFilter" class="form-control">
+            <option value="all">All Diets</option>
+            <option value="veg">Veg Only</option>
+            <option value="non-veg">Non-Veg Only</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDS GRID CONTAINER -->
+  <section style="padding-bottom: 6rem;">
+    <div class="container">
+      <div class="cards-grid" id="foodCardsContainer">
+        <!-- Rendered dynamically by script.js via Firebase Firestore -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: white;">
+            <div class="logo-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            Food<span style="color: var(--secondary);">Bridge</span>
+          </a>
+          <p class="footer-desc">
+            A technology-driven community platform eliminating food waste and feeding hungry communities with dignity and care.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donate.html">Donate Food</a></li>
+            <li><a href="findfood.html">Find Available Food</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Community</h4>
+          <ul class="footer-links">
+            <li><a href="volunteer.html">Become a Volunteer</a></li>
+            <li><a href="ngo.html">Partner NGOs</a></li>
+            <li><a href="contact.html">Emergency Helpline</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Emergency Hotline</h4>
+          <a href="tel:1800555FOOD" style="font-family: 'Poppins', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--secondary);">
+            <i class="fas fa-phone-alt"></i> 1800-555-FOOD
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FoodBridge – Every Meal Matters. Community Engagement Project (CEP).</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CLAIM MODAL -->
+  <div class="modal-overlay" id="claimModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('claimModal')">&times;</button>
+      <div id="claimModalBody"></div>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

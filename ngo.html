@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partner NGOs & Shelters – FoodBridge</title>
+  <meta name="description" content="Explore certified NGO partners, orphanages, and community shelters connected with FoodBridge for daily surplus food distribution.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-hand-holding-heart"></i></div>
+        Food<span>Bridge</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="donate.html" class="nav-link">Donate Food</a>
+        <a href="findfood.html" class="nav-link">Find Food</a>
+        <a href="volunteer.html" class="nav-link">Volunteers</a>
+        <a href="ngo.html" class="nav-link active">NGOs</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="donate.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-plus-circle"></i> Donate Surplus
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section style="padding: 3.5rem 0 2.5rem 0; background: linear-gradient(180deg, rgba(232, 245, 233, 0.4) 0%, rgba(255, 253, 248, 1) 100%);">
+    <div class="container text-center">
+      <span class="section-tag"><i class="fas fa-building-ngo"></i> Certified Network</span>
+      <h1 class="section-title">Verified NGO &amp; Shelter Directory</h1>
+      <p class="section-subtitle">FoodBridge partners with certified non-profits, orphanages, and community kitchens serving nutritious meals daily.</p>
+    </div>
+  </section>
+
+  <!-- NGO GRID SECTION -->
+  <section style="padding: 3rem 0 6rem 0;">
+    <div class="container">
+      <div class="grid-3" id="ngoGridContainer">
+        
+        <!-- NGO 1 -->
+        <div class="ngo-card">
+          <div class="ngo-header">
+            <div class="ngo-avatar"><i class="fas fa-home"></i></div>
+            <div>
+              <h3 style="font-size: 1.2rem;">Hope Children Orphanage</h3>
+              <small style="color: var(--primary-dark); font-weight: 600;"><i class="fas fa-check-circle"></i> Verified Partner</small>
+            </div>
+          </div>
+          <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.2rem; flex-grow: 1;">
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-users" style="color: var(--primary);"></i> <strong>Beneficiaries:</strong> 120 Children</p>
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-map-marker-alt" style="color: var(--secondary);"></i> <strong>Area Served:</strong> Sector 4, Central City</p>
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-phone-alt"></i> <strong>Contact:</strong> Sister Mary (+91 98111 22334)</p>
+          </div>
+          <button class="btn btn-outline btn-sm" style="width: 100%;" onclick="openNGOModal('Hope Children Orphanage')">
+            <i class="fas fa-paper-plane"></i> Request Food Batch
+          </button>
+        </div>
+
+        <!-- NGO 2 -->
+        <div class="ngo-card">
+          <div class="ngo-header">
+            <div class="ngo-avatar" style="background: var(--primary-subtle); color: var(--primary-dark);"><i class="fas fa-heart"></i></div>
+            <div>
+              <h3 style="font-size: 1.2rem;">Sunshine Senior Care Home</h3>
+              <small style="color: var(--primary-dark); font-weight: 600;"><i class="fas fa-check-circle"></i> Verified Partner</small>
+            </div>
+          </div>
+          <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.2rem; flex-grow: 1;">
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-users" style="color: var(--primary);"></i> <strong>Beneficiaries:</strong> 85 Senior Citizens</p>
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-map-marker-alt" style="color: var(--secondary);"></i> <strong>Area Served:</strong> West End Colony</p>
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-phone-alt"></i> <strong>Contact:</strong> Dr. R. K. Varma (+91 98222 33445)</p>
+          </div>
+          <button class="btn btn-outline btn-sm" style="width: 100%;" onclick="openNGOModal('Sunshine Senior Care Home')">
+            <i class="fas fa-paper-plane"></i> Request Food Batch
+          </button>
+        </div>
+
+        <!-- NGO 3 -->
+        <div class="ngo-card">
+          <div class="ngo-header">
+            <div class="ngo-avatar"><i class="fas fa-utensils"></i></div>
+            <div>
+              <h3 style="font-size: 1.2rem;">Annapoorna Community Kitchen</h3>
+              <small style="color: var(--primary-dark); font-weight: 600;"><i class="fas fa-check-circle"></i> Verified Partner</small>
+            </div>
+          </div>
+          <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.2rem; flex-grow: 1;">
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-users" style="color: var(--primary);"></i> <strong>Beneficiaries:</strong> 350+ Daily Laborers</p>
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-map-marker-alt" style="color: var(--secondary);"></i> <strong>Area Served:</strong> Central Railway Station Hub</p>
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-phone-alt"></i> <strong>Contact:</strong> Suresh Gowda (+91 98333 44556)</p>
+          </div>
+          <button class="btn btn-outline btn-sm" style="width: 100%;" onclick="openNGOModal('Annapoorna Community Kitchen')">
+            <i class="fas fa-paper-plane"></i> Request Food Batch
+          </button>
+        </div>
+
+        <!-- NGO 4 -->
+        <div class="ngo-card">
+          <div class="ngo-header">
+            <div class="ngo-avatar" style="background: var(--primary-subtle); color: var(--primary-dark);"><i class="fas fa-hands-helping"></i></div>
+            <div>
+              <h3 style="font-size: 1.2rem;">St. Jude Relief Shelter</h3>
+              <small style="color: var(--primary-dark); font-weight: 600;"><i class="fas fa-check-circle"></i> Verified Partner</small>
+            </div>
+          </div>
+          <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.2rem; flex-grow: 1;">
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-users" style="color: var(--primary);"></i> <strong>Beneficiaries:</strong> 160 Residents</p>
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-map-marker-alt" style="color: var(--secondary);"></i> <strong>Area Served:</strong> South Highway Junction</p>
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-phone-alt"></i> <strong>Contact:</strong> Fr. David (+91 98444 55667)</p>
+          </div>
+          <button class="btn btn-outline btn-sm" style="width: 100%;" onclick="openNGOModal('St. Jude Relief Shelter')">
+            <i class="fas fa-paper-plane"></i> Request Food Batch
+          </button>
+        </div>
+
+        <!-- NGO 5 -->
+        <div class="ngo-card">
+          <div class="ngo-header">
+            <div class="ngo-avatar"><i class="fas fa-globe"></i></div>
+            <div>
+              <h3 style="font-size: 1.2rem;">Jan Seva Welfare Trust</h3>
+              <small style="color: var(--primary-dark); font-weight: 600;"><i class="fas fa-check-circle"></i> Verified Partner</small>
+            </div>
+          </div>
+          <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.2rem; flex-grow: 1;">
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-users" style="color: var(--primary);"></i> <strong>Beneficiaries:</strong> 220 Daily Families</p>
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-map-marker-alt" style="color: var(--secondary);"></i> <strong>Area Served:</strong> Eastern Industrial Belt</p>
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-phone-alt"></i> <strong>Contact:</strong> Sunita Patil (+91 98555 66778)</p>
+          </div>
+          <button class="btn btn-outline btn-sm" style="width: 100%;" onclick="openNGOModal('Jan Seva Welfare Trust')">
+            <i class="fas fa-paper-plane"></i> Request Food Batch
+          </button>
+        </div>
+
+        <!-- NGO 6 -->
+        <div class="ngo-card">
+          <div class="ngo-header">
+            <div class="ngo-avatar" style="background: var(--primary-subtle); color: var(--primary-dark);"><i class="fas fa-child"></i></div>
+            <div>
+              <h3 style="font-size: 1.2rem;">Mother Teresa Care Center</h3>
+              <small style="color: var(--primary-dark); font-weight: 600;"><i class="fas fa-check-circle"></i> Verified Partner</small>
+            </div>
+          </div>
+          <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 1.2rem; flex-grow: 1;">
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-users" style="color: var(--primary);"></i> <strong>Beneficiaries:</strong> 95 Children &amp; Mothers</p>
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-map-marker-alt" style="color: var(--secondary);"></i> <strong>Area Served:</strong> Park Street Ward 12</p>
+            <p style="margin-bottom: 0.4rem;"><i class="fas fa-phone-alt"></i> <strong>Contact:</strong> Sister Anna (+91 98666 77889)</p>
+          </div>
+          <button class="btn btn-outline btn-sm" style="width: 100%;" onclick="openNGOModal('Mother Teresa Care Center')">
+            <i class="fas fa-paper-plane"></i> Request Food Batch
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NGO REQUEST MODAL -->
+  <div class="modal-overlay" id="ngoModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('ngoModal')">&times;</button>
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <h2 style="font-size: 1.4rem;" id="ngoModalTitle">Request Food Batch</h2>
+        <p style="color: var(--text-muted); font-size: 0.9rem;">Submit a priority request for upcoming bulk food donations.</p>
+      </div>
+
+      <form id="ngoRequestForm">
+        <div class="form-group">
+          <label class="form-label">Required Meal Portions</label>
+          <input type="number" name="mealPortions" class="form-control" placeholder="e.g. 100 Portions" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Delivery / Pickup Slot Required</label>
+          <input type="text" name="deliverySlot" class="form-control" placeholder="e.g. Today between 7 PM - 9 PM" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Representative Name &amp; Phone</label>
+          <input type="text" name="representative" class="form-control" placeholder="Your name &amp; mobile number" required />
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          <i class="fas fa-paper-plane"></i> Submit Broadcast Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: white;">
+            <div class="logo-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            Food<span style="color: var(--secondary);">Bridge</span>
+          </a>
+          <p class="footer-desc">
+            A technology-driven community platform eliminating food waste and feeding hungry communities with dignity and care.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donate.html">Donate Food</a></li>
+            <li><a href="findfood.html">Find Available Food</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Community</h4>
+          <ul class="footer-links">
+            <li><a href="volunteer.html">Become a Volunteer</a></li>
+            <li><a href="ngo.html">Partner NGOs</a></li>
+            <li><a href="contact.html">Emergency Helpline</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Emergency Hotline</h4>
+          <a href="tel:1800555FOOD" style="font-family: 'Poppins', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--secondary);">
+            <i class="fas fa-phone-alt"></i> 1800-555-FOOD
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FoodBridge – Every Meal Matters. Community Engagement Project (CEP).</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <script>
+    function openNGOModal(ngoName) {
+      document.getElementById('ngoModalTitle').textContent = 'Request Food Batch for ' + ngoName;
+      document.getElementById('ngoModal').classList.add('active');
+    }
+  </script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

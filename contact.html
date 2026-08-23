@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us – FoodBridge</title>
+  <meta name="description" content="Get in touch with the FoodBridge team. Emergency food hotline, partnership inquiries, and volunteer support.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-hand-holding-heart"></i></div>
+        Food<span>Bridge</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="donate.html" class="nav-link">Donate Food</a>
+        <a href="findfood.html" class="nav-link">Find Food</a>
+        <a href="volunteer.html" class="nav-link">Volunteers</a>
+        <a href="ngo.html" class="nav-link">NGOs</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="donate.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-plus-circle"></i> Donate Surplus
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section style="padding: 3.5rem 0 2.5rem 0; background: linear-gradient(180deg, rgba(232, 245, 233, 0.4) 0%, rgba(255, 253, 248, 1) 100%);">
+    <div class="container text-center">
+      <span class="section-tag"><i class="fas fa-envelope-open-text"></i> We Are Here to Help</span>
+      <h1 class="section-title">Contact &amp; Emergency Support</h1>
+      <p class="section-subtitle">Have a question, feedback, or urgent bulk food donation? Reach out to our team anytime.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID SECTION -->
+  <section style="padding: 3rem 0 6rem 0;">
+    <div class="container">
+      <div class="donate-layout">
+        
+        <!-- CONTACT FORM -->
+        <div class="form-card">
+          <h3 class="form-section-title"><i class="fas fa-paper-plane"></i> Send Us a Message</h3>
+          
+          <form id="contactForm" onsubmit="event.preventDefault(); showToast('Message sent! Our support team will get back to you within 2 hours.'); this.reset();">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Your Name *</label>
+                <input type="text" name="name" class="form-control" placeholder="e.g. Vikram Sharma" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address *</label>
+                <input type="email" name="email" class="form-control" placeholder="e.g. vikram@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Subject Category *</label>
+              <select name="subject" class="form-control" required>
+                <option value="Donation Question">Food Donation Question</option>
+                <option value="Emergency Food Dispatch">Emergency Food Dispatch</option>
+                <option value="NGO Partnership">NGO / Shelter Partnership</option>
+                <option value="Volunteer Query">Volunteer Query</option>
+                <option value="Feedback">General Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Your Message *</label>
+              <textarea name="message" class="form-control" rows="4" placeholder="How can we assist you?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- CONTACT DETAILS SIDEBAR -->
+        <div>
+          <!-- EMERGENCY HELPLINE BANNER -->
+          <div style="background: linear-gradient(135deg, var(--secondary) 0%, var(--secondary-dark) 100%); color: white; padding: 2rem; border-radius: var(--radius-lg); margin-bottom: 2rem; box-shadow: var(--shadow-md);">
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+              <div style="width: 50px; height: 50px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
+                <i class="fas fa-phone-volume"></i>
+              </div>
+              <div>
+                <h3 style="color: white; font-size: 1.25rem;">24/7 Emergency Food Hotline</h3>
+                <p style="font-size: 0.88rem; opacity: 0.9;">For urgent bulk donations expiring within 2 hours</p>
+              </div>
+            </div>
+            <a href="tel:1800555FOOD" style="display: block; text-align: center; background: white; color: var(--secondary-dark); padding: 0.8rem; border-radius: var(--radius-pill); font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.25rem;">
+              1800-555-FOOD (3663)
+            </a>
+          </div>
+
+          <!-- HQ ADDRESS CARD -->
+          <div style="background: var(--surface-white); padding: 2rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+            <h3 style="font-size: 1.25rem; margin-bottom: 1.2rem; color: var(--primary-dark);">
+              <i class="fas fa-building"></i> Headquarters &amp; Innovation Hub
+            </h3>
+
+            <div style="display: flex; flex-direction: column; gap: 1rem; font-size: 0.95rem; color: var(--text-muted);">
+              <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+                <i class="fas fa-map-marker-alt" style="color: var(--secondary); margin-top: 4px;"></i>
+                <span>FoodBridge CEP Hub, Innovation Tower, Suite 402, Central City</span>
+              </div>
+              <div style="display: flex; gap: 0.8rem; align-items: center;">
+                <i class="fas fa-envelope" style="color: var(--primary);"></i>
+                <a href="mailto:support@foodbridge-cep.org" style="color: var(--text-main); font-weight: 500;">support@foodbridge-cep.org</a>
+              </div>
+              <div style="display: flex; gap: 0.8rem; align-items: flex-start;">
+                <i class="fas fa-clock" style="color: var(--accent-teal); margin-top: 4px;"></i>
+                <span><strong>Hours:</strong> Mon - Sun: 8:00 AM - 10:00 PM (Emergency Dispatch 24/7)</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: white;">
+            <div class="logo-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            Food<span style="color: var(--secondary);">Bridge</span>
+          </a>
+          <p class="footer-desc">
+            A technology-driven community platform eliminating food waste and feeding hungry communities with dignity and care.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donate.html">Donate Food</a></li>
+            <li><a href="findfood.html">Find Available Food</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Community</h4>
+          <ul class="footer-links">
+            <li><a href="volunteer.html">Become a Volunteer</a></li>
+            <li><a href="ngo.html">Partner NGOs</a></li>
+            <li><a href="contact.html">Emergency Helpline</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Emergency Hotline</h4>
+          <a href="tel:1800555FOOD" style="font-family: 'Poppins', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--secondary);">
+            <i class="fas fa-phone-alt"></i> 1800-555-FOOD
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FoodBridge – Every Meal Matters. Community Engagement Project (CEP).</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

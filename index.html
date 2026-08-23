@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodBridge – Every Meal Matters | Surplus Food Redistribution</title>
+  <meta name="description" content="FoodBridge connects restaurants, hostels, event hosts, and individuals having extra fresh food with NGOs, shelters, and volunteers to eliminate hunger and reduce food waste.">
+  
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-hand-holding-heart"></i></div>
+        Food<span>Bridge</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="donate.html" class="nav-link">Donate Food</a>
+        <a href="findfood.html" class="nav-link">Find Food</a>
+        <a href="volunteer.html" class="nav-link">Volunteers</a>
+        <a href="ngo.html" class="nav-link">NGOs</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="donate.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-plus-circle"></i> Donate Surplus
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span> Over 154,000+ Meals Shared Live
+          </div>
+          <h1 class="hero-title">Every Meal <span class="highlight-text">Matters.</span> Turn Surplus Into Sustenance.</h1>
+          <p class="hero-description">
+            Connecting restaurants, canteens, hostels, and wedding halls having extra fresh food with verified NGOs, orphanages, and volunteers to fight hunger and eliminate food waste in real-time.
+          </p>
+          <div class="hero-ctas">
+            <a href="donate.html" class="btn btn-primary btn-lg">
+              <i class="fas fa-hand-holding-heart"></i> Donate Surplus Food
+            </a>
+            <a href="volunteer.html" class="btn btn-secondary btn-lg">
+              <i class="fas fa-users"></i> Become a Volunteer
+            </a>
+          </div>
+          <div class="hero-trust">
+            <div class="avatar-group">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Volunteer">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Donor">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="NGO Lead">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Volunteer">
+            </div>
+            <div class="hero-trust-text">
+              <strong>Joined by 250+ Food Businesses</strong><br>
+              &amp; 85+ Certified Shelter Partners
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-image-card">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=800&q=80" alt="Community Food Distribution">
+          </div>
+          <div class="floating-impact-card">
+            <div class="floating-icon">
+              <i class="fas fa-truck-loading"></i>
+            </div>
+            <div>
+              <h4 style="font-size: 1.05rem; color: var(--text-main);">Live Pickup Alert</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted);">40 Portions claimed by Hope Shelter</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT DASHBOARD (ANIMATED STATS) -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" data-target="154200" data-suffix="+">0</div>
+          <div class="stat-label">Meals Shared</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="42" data-suffix=" Tons">0</div>
+          <div class="stat-label">Food Waste Saved</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="1280" data-suffix="+">0</div>
+          <div class="stat-label">Active Volunteers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="85" data-suffix="+">0</div>
+          <div class="stat-label">Partner NGOs</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="18" data-suffix=" Cities">0</div>
+          <div class="stat-label">Coverage Reach</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS TIMELINE -->
+  <section class="how-it-works">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="fas fa-route"></i> Seamless Process</span>
+        <h2 class="section-title">How FoodBridge Works</h2>
+        <p class="section-subtitle">Bridging surplus food to hungry souls in 4 simple steps.</p>
+      </div>
+
+      <div class="timeline-grid">
+        <div class="timeline-step">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Post Extra Food</h3>
+          <p class="step-desc">Donors (restaurants, caterers, hostels) list available fresh food quantity, expiry time, and pickup address in under 30 seconds.</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Instant Geo Alerts</h3>
+          <p class="step-desc">Nearby verified shelters, orphanages, and food rescue volunteers receive instant notification alerts.</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Safety Inspection</h3>
+          <p class="step-desc">Volunteers conduct hygiene checks, temperature verification, and seal food in sanitized transport containers.</p>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-number">04</div>
+          <h3 class="step-title">Rapid Distribution</h3>
+          <p class="step-desc">Meals are transported directly to shelters and community kitchens before expiry, serving wholesome food to people in need.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE AVAILABLE DONATIONS BOARD -->
+  <section class="donations-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="fas fa-utensils"></i> Real-time Feed</span>
+        <h2 class="section-title">Available Food Donations</h2>
+        <p class="section-subtitle">Browse recent listings posted by generous donors ready for immediate pickup.</p>
+      </div>
+
+      <div class="cards-grid" id="foodCardsContainer">
+        <!-- Rendered dynamically by script.js via Firebase Firestore -->
+      </div>
+
+      <div class="text-center" style="margin-top: 3rem;">
+        <a href="findfood.html" class="btn btn-outline btn-lg">
+          View All Available Listings <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOD SAFETY & QUALITY GUARANTEE -->
+  <section style="padding: 5rem 0; background: white;">
+    <div class="container">
+      <div class="hero-grid" style="align-items: center;">
+        <div>
+          <span class="section-tag"><i class="fas fa-shield-alt"></i> Highest Standards</span>
+          <h2 class="section-title" style="font-size: 2.2rem;">Strict Food Safety &amp; Hygiene Standards</h2>
+          <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.05rem;">
+            Food safety is our top priority. FoodBridge enforces strict safety protocols based on international food handling guidelines:
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div style="width: 40px; height: 40px; background: var(--primary-subtle); color: var(--primary-dark); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                <i class="fas fa-thermometer-half"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1.05rem;">Thermal Chain Protection</h4>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Hot foods maintained above 60°C; chilled foods kept below 5°C during transport.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div style="width: 40px; height: 40px; background: var(--secondary-light); color: var(--secondary-dark); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1.05rem;">4-Hour Window Policy</h4>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">Cooked food is redistributed and served strictly within 4 hours of preparation.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+              <div style="width: 40px; height: 40px; background: var(--primary-subtle); color: var(--primary-dark); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                <i class="fas fa-box-tissue"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1.05rem;">Sanitized Packaging Rules</h4>
+                <p style="font-size: 0.9rem; color: var(--text-muted);">All food must be packaged in unused, clean, food-grade containers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="https://images.unsplash.com/photo-1576867757603-05b134ebc379?auto=format&fit=crop&w=700&q=80" alt="Hygiene & Safety Inspection" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section style="padding: 5rem 0; background: var(--bg-main);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="fas fa-question-circle"></i> Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you need to know about donating or receiving food via FoodBridge.</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item active">
+          <button class="faq-question">
+            <span>Who can donate food on FoodBridge?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Anyone! Restaurants, hotels, caterers, college mess canteens, corporate cafeterias, event managers, and individual households with excess untouched fresh food can donate.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Is there any fee to join or request food?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>No. FoodBridge is a 100% free community engagement project platform dedicated to social welfare, zero waste, and hunger eradication.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How is food quality ensured before distribution?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Donors must confirm preparation time and dietary type. Our volunteer captains perform smell, visual, and temperature inspections upon pickup.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How can I register as a volunteer?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Simply navigate to our <a href="volunteer.html" style="color: var(--primary); font-weight: 600;">Volunteer Page</a>, select your area and preferred role, and fill in the quick registration form!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: white;">
+            <div class="logo-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            Food<span style="color: var(--secondary);">Bridge</span>
+          </a>
+          <p class="footer-desc">
+            A technology-driven community platform eliminating food waste and feeding hungry communities with dignity and care.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donate.html">Donate Food</a></li>
+            <li><a href="findfood.html">Find Available Food</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Community</h4>
+          <ul class="footer-links">
+            <li><a href="volunteer.html">Become a Volunteer</a></li>
+            <li><a href="ngo.html">Partner NGOs</a></li>
+            <li><a href="contact.html">Emergency Helpline</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Emergency Food Hotline</h4>
+          <p style="font-size: 0.9rem; color: #90A4AE; margin-bottom: 1rem;">Have bulk food expiring within 2 hours? Call our direct hotline immediately:</p>
+          <a href="tel:1800555FOOD" style="font-family: 'Poppins', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--secondary);">
+            <i class="fas fa-phone-alt"></i> 1800-555-FOOD
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FoodBridge – Every Meal Matters. Community Engagement Project (CEP).</p>
+        <p>Powered by Firebase Firestore</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- CLAIM MODAL -->
+  <div class="modal-overlay" id="claimModal">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('claimModal')">&times;</button>
+      <div id="claimModalBody"></div>
+    </div>
+  </div>
+
+  <!-- Firebase & App ES Modules -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>

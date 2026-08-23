@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Become a Volunteer – FoodBridge</title>
+  <meta name="description" content="Join 1,200+ volunteers saving food and serving hot meals to needy communities in your city.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-hand-holding-heart"></i></div>
+        Food<span>Bridge</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="donate.html" class="nav-link">Donate Food</a>
+        <a href="findfood.html" class="nav-link">Find Food</a>
+        <a href="volunteer.html" class="nav-link active">Volunteers</a>
+        <a href="ngo.html" class="nav-link">NGOs</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="donate.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-plus-circle"></i> Donate Surplus
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section style="padding: 3.5rem 0 2.5rem 0; background: linear-gradient(180deg, rgba(255, 243, 224, 0.4) 0%, rgba(255, 253, 248, 1) 100%);">
+    <div class="container text-center">
+      <span class="section-tag"><i class="fas fa-users"></i> Local Champions</span>
+      <h1 class="section-title">Be the Bridge That Feeds a Neighbor</h1>
+      <p class="section-subtitle">Donate 2 hours a week to transport surplus meals, verify food quality, or coordinate local food drives.</p>
+    </div>
+  </section>
+
+  <!-- ROLES SECTION -->
+  <section style="padding: 3rem 0;">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 2.5rem;">
+        <h2 style="font-size: 2rem;">Volunteer Role Opportunities</h2>
+      </div>
+
+      <div class="grid-3" style="grid-template-columns: repeat(4, 1fr);">
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-car-side"></i></div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.6rem;">Rescue Captain</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted);">Pick up food packages from local restaurants using your bike or car and deliver to shelters.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon" style="background: var(--secondary-light); color: var(--secondary-dark);"><i class="fas fa-clipboard-check"></i></div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.6rem;">Quality Inspector</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted);">Inspect food temperature, aroma, and eco-packaging before approving dispatch.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-headset"></i></div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.6rem;">Dispatch Coordinator</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted);">Manage real-time phone calls between donors and orphanages from your home.</p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon" style="background: var(--secondary-light); color: var(--secondary-dark);"><i class="fas fa-bullhorn"></i></div>
+          <h3 style="font-size: 1.15rem; margin-bottom: 0.6rem;">Campus Ambassador</h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted);">Organize food waste reduction drives in college canteens and hostels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM + TESTIMONIALS LAYOUT -->
+  <section style="padding: 3rem 0 6rem 0; background: #F7FAF6;">
+    <div class="container">
+      <div class="donate-layout">
+        
+        <!-- REGISTRATION FORM -->
+        <div class="form-card">
+          <h3 class="form-section-title"><i class="fas fa-user-plus"></i> Volunteer Registration</h3>
+          
+          <form id="volunteerForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Full Name *</label>
+                <input type="text" name="fullName" class="form-control" placeholder="e.g. Rahul Sharma" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number *</label>
+                <input type="tel" name="phone" class="form-control" placeholder="e.g. +91 98765 12345" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Email Address *</label>
+                <input type="email" name="email" class="form-control" placeholder="e.g. rahul@example.com" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">City / Locality *</label>
+                <input type="text" name="city" class="form-control" placeholder="e.g. North Sector, Central City" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Preferred Role *</label>
+                <select name="role" class="form-control" required>
+                  <option value="Rescue Captain">Rescue Captain (Transport)</option>
+                  <option value="Quality Inspector">Quality Inspector</option>
+                  <option value="Dispatch Coordinator">Dispatch Coordinator</option>
+                  <option value="Campus Ambassador">Campus Ambassador</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Vehicle Access</label>
+                <select name="vehicle" class="form-control">
+                  <option value="Two Wheeler">Two Wheeler (Scooter/Bike)</option>
+                  <option value="Four Wheeler">Four Wheeler (Car/Van)</option>
+                  <option value="Public Transport">Public Transport / Foot</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Weekly Availability</label>
+              <select name="availability" class="form-control">
+                <option value="1-2 Hours">1 - 2 Hours / week</option>
+                <option value="3-5 Hours">3 - 5 Hours / week</option>
+                <option value="Weekends Only">Weekends Only</option>
+                <option value="On Call">On Call for Emergencies</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1rem;">
+              <i class="fas fa-check-circle"></i> Complete Registration
+            </button>
+          </form>
+        </div>
+
+        <!-- VOLUNTEER TESTIMONIALS -->
+        <div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Volunteer Stories</h3>
+
+          <div style="background: var(--surface-white); padding: 1.8rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); margin-bottom: 1.5rem; box-shadow: var(--shadow-sm);">
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Volunteer" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" />
+              <div>
+                <h4 style="font-size: 1.05rem;">Priya Mehta</h4>
+                <small style="color: var(--primary-dark); font-weight: 600;">Rescue Captain (140+ Pickups)</small>
+              </div>
+            </div>
+            <p style="font-size: 0.92rem; color: var(--text-muted); font-style: italic;">
+              "The instant alert system on FoodBridge makes it so easy. Whenever a hotel nearby posts surplus meals after lunch, I collect the vessels and drop them at Saint Joseph shelter in 20 minutes!"
+            </p>
+          </div>
+
+          <div style="background: var(--surface-white); padding: 1.8rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Volunteer" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;" />
+              <div>
+                <h4 style="font-size: 1.05rem;">Arjun Nair</h4>
+                <small style="color: var(--secondary-dark); font-weight: 600;">Campus Ambassador</small>
+              </div>
+            </div>
+            <p style="font-size: 0.92rem; color: var(--text-muted); font-style: italic;">
+              "We registered our college hostel mess on FoodBridge. Now, instead of throwing away excess rice and dal every night, it nourishes 60 children at a local shelter daily."
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color: white;">
+            <div class="logo-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            Food<span style="color: var(--secondary);">Bridge</span>
+          </a>
+          <p class="footer-desc">
+            A technology-driven community platform eliminating food waste and feeding hungry communities with dignity and care.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donate.html">Donate Food</a></li>
+            <li><a href="findfood.html">Find Available Food</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Community</h4>
+          <ul class="footer-links">
+            <li><a href="volunteer.html">Become a Volunteer</a></li>
+            <li><a href="ngo.html">Partner NGOs</a></li>
+            <li><a href="contact.html">Emergency Helpline</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Emergency Hotline</h4>
+          <a href="tel:1800555FOOD" style="font-family: 'Poppins', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--secondary);">
+            <i class="fas fa-phone-alt"></i> 1800-555-FOOD
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 FoodBridge – Every Meal Matters. Community Engagement Project (CEP).</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
